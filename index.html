@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>JavaScript GitHub API with XHR</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+      .flexbox-container {
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+      }
+
+      .flexbox-container>div {
+        width: 30%;
+        padding: 10px;
+      }
+
+      .flexbox-container>div:first-child {
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main id="main">
+      <form onsubmit="getChallengeRepository();return false;">
+        <input type="text" id="username" placeholder="username"><br>
+        <input type="submit">
+      </form>
+    </main>
+    <div class="flexbox-container">
+      <div>
+        <h3>User</h3>
+        <div id="users"></div>
+      </div>
+      <div>
+        <h3>Commit Messages</h3>
+        <div id="commits"></div>
+      </div>
+      <div>
+        <h3>Time</h3>
+        <div id="timestamp"></div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+
+
+  </body>
+
+</html>
